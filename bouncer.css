@@ -44,8 +44,8 @@
 
 @keyframes loaded {
     100%{
-        width: 2000vw;
-        height: 2000vw;
+        width: 5000px;
+        height: 5000px;
         border-radius: 50%;
         opacity: 0;
     }
