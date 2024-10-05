@@ -2,7 +2,7 @@
 
 // function for Adding a loading screen
 function addBouncer(container) {
-    let cont = document.querySelector(`.${container}`)
+    let cont = document.querySelector(`${container}`)
     let bounce = document.createElement("div")
     let loading = document.createElement("div")
     loading.className = "loading"
@@ -44,7 +44,7 @@ async function weatherData(city) {
 
 async function main(city) {
 
-    addBouncer("container")
+    addBouncer("article")
     let data = await weatherData(city)
     removeBouncer()
     if (typeof data === "string") {
