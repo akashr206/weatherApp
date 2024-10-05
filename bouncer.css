@@ -1,0 +1,52 @@
+
+
+.loading{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1000;
+}
+
+
+.bounce{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    animation: bounce 0.6s ease-in-out infinite;
+    transition: 1s all;
+}
+
+.bounce2{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    animation: loaded 1s ease-in-out 1;
+}
+
+@keyframes bounce {
+    50%{
+        width: 60px;
+        height: 60px;
+        opacity: 0;
+    }
+}
+
+@keyframes loaded {
+    100%{
+        width: 2000vw;
+        height: 2000vw;
+        border-radius: 50%;
+        opacity: 0;
+    }
+}

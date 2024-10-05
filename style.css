@@ -14,7 +14,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    z-index: 100000;
 }
 
 header h5 {
@@ -219,8 +219,8 @@ header .searchbar{
 
 @media (max-width:370px){
     .allDetails .detailBox {
-        width: 130px;
-        height: 130px;
+        width: 140px;
+        height: 140px;
         transition: 0.5s all;
     }
 
@@ -233,6 +233,10 @@ header .searchbar{
     .realFeel .unit {
        font-size: 14px;
        transition: 0.5s all;
+    }
+
+    .allDetails .detailName {
+        font-size: 14px;
     }
 }
 
